@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UpDock | Start-up Registration</title>
+    <link rel="stylesheet" href="css/laurenz.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link href='http://fonts.googleapis.com/css?family=Arbutus+Slab' rel='stylesheet' type='text/css'>
+    <script src="js/vendor/modernizr.js"></script>
+</head>
+<body class="body">
+    <br>
+    <div class="row">
+        <ul class="left">
+            <li><img src="assets/logo_small1.png"></li>
+        </ul>
+        <!--
+        <ul class="right">
+            <a class="button radius" href="#">Log In</a>
+        </ul>
+        -->
+    </div>
+
+
+    <br>
+    <div id="bottom-topbar">
+        @{
+            if (IsPost)
+            {
+                string fname = Request["fname"];
+                string lname = Request["lname"];
+                string employeremail = Request["employeremail"];
+                string name = Request["name"];
+                string email = Request["email"];
+                string addr = Request["address"];
+                string password = Request["pass"];
+                string confirm = Request["confirm"];
+                if (password == confirm) { 
+                    var db = Database.Open("UpDockConnectionString");
+                    var queryString = "INSERT INTO Employer ( fname, lname, email, passwordhash, startup_name, startup_email, startup_address) VALUES ('" + fname + "', '" + lname + "', '" + employeremail + "', '" + password + "', '" + name + "', '" + email + "', '" + addr + "')";
+                    var query = db.Execute(queryString);
+                    Session["user_email"] = employeremail;
+                  db.Close();
+                }
+                Response.BufferOutput = true;
+                Response.Redirect("companyProfileForm.cshtml");
+
+            }
+            else {
+            <form method="post">
+                <div class="row">
+                    <div class="large-6 columns">
+                        <label id="login-signup">Start-up Registration</label>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="large-4 columns">
+                        <input type="text" name="name" placeholder="Name" id="rounded-input-darkteal">
+                    </div>
+
+                    <div class="large-4 columns">
+                        <input type="text" name="email" placeholder="Start-up Email Address" id="rounded-input-darkteal">
+                    </div>
+
+                    <div class="large-12 columns">
+                        <input type="text" name="address" placeholder="Address (Optional)" id="rounded-input-darkteal">
+                    </div>
+
+                    <div class="large-4 columns">
+                        <input type="text" name="fname" placeholder="Employer First Name" id="rounded-input-darkteal">
+                    </div>
+
+                    <div class="large-4 columns">
+                        <input type="text" name="lname" placeholder="Employer Last Name" id="rounded-input-darkteal">
+                    </div>
+                    <div class="large-4 columns">
+                        <input type="text" name="employeremail" placeholder="Employer Email Address" id="rounded-input-darkteal">
+                    </div>
+                    <div class="large-4 columns">
+                        <input type="password" name="pass" placeholder="Password" id="rounded-input-darkteal">
+                    </div>
+                    <div class="large-4 columns">
+                        <input type="password" name="confirm" placeholder="Confirm Password" id="rounded-input-darkteal">
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <input type="submit" value="Sign-up" id="rounded-button-register">
+                    </div>
+                </div>
+            </form>
+        }
+        }
+    </div>
+    <div class="bottom-lowbar">
+        UpDock © 2014 by Tatsulok.<br>
+        De La Salle University, 2401 Taft Avenue, Malate, Manila, Philippines
+    </div>
+
+    <div class="bottom-members">
+        <br>
+        <div class="row">
+            <h1 id="tatsulok"> Team Tatsulok </h1>
+
+            <div class="large-3 columns">
+                <img src="assets/scarlett1.png">
+                <br>
+                <h1 id="names"> Laurenz Tolentino </h1>
+            </div>
+
+            <div class="large-3 columns">
+                <img src="assets/scarlett1.png">
+                <br>
+                <h1 id="names"> Scarlett Johansson </h1>
+            </div>
+
+            <div class="large-3 columns">
+                <img src="assets/messi1.png">
+                <br>
+                <h1 id="names"> Lionel Messi </h1>
+            </div>
+
+            <div class="large-3 columns">
+                <img src="assets/messi1.png">
+                <br>
+                <h1 id="names"> Groupmate </h1>
+            </div>
+        </div>
+    </div>
+    <!-- Script Part, keep in bottom-->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+</html>

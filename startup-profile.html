@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>UpDock | Profile</title>		
+		<link rel="stylesheet" href="css/laurenz.css">
+		<link rel="stylesheet" href="css/text-styles.css">	
+        <link rel="stylesheet" href="css/foundation-icons.css">
+		<link rel="stylesheet" type="text/css" href="css/interacts.css">
+		<link rel="stylesheet" href="css/foundation.css"/>
+		<link rel="stylesheet" href="css/laurenz.css">
+        <link rel="stylesheet" href="css/updock.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		
+		<script src="/js/vendor/modernizr.js"></script>
+	</head>
+
+	<body class="body">			
+		<div class="off-canvas-wrap">
+		  <div class="inner-wrap">
+		  	<div class="fixed">
+                <nav class="fixed tab-bar background-teal">
+                    <section id="left-ped" class="left-small background-teal" >
+                        <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+                    </section>
+
+                    <section class="middle tab-bar-section background-teal">
+                        <span class="rockwell font-20">
+                            <span id="minititle">
+                                <i class="step fi-comment margin-right-10" style="font-size: 25px;"></i>  
+                                <i class="step fi-like margin-right-10" style="font-size: 25px;"></i>  
+                                <i class="step fi-heart margin-right-10" style="font-size: 25px;"></i>  
+                                <i class="step fi-page-csv margin-right-10" style="font-size: 25px; "></i>
+                                | 
+                            </span>                            
+                            <a href="#" data-reveal-id="modal-request" data-reveal id="modalClick">
+                                UpDock 
+                            </a>
+                            
+                            
+                        </span>
+                        <span> <input id="searchbox" input="text" placeholder="Search Here"> </span>
+                    </section>
+
+                    <section id="right-ped" class="right-small right-mod">
+                        <a class="right-off-canvas-toggle" style="color: white;">
+                            
+                        </a>
+                    </section>
+                </nav>
+		  	</div>
+		    
+
+		    <aside class="left-off-canvas-menu">
+		      <ul class="off-canvas-list">
+		        <li><label>Account Settings</label></li>                  
+                <!--<li><a href="#" data-reveal-id="modal-request" data-reveal>Edit Profile</a></li>-->
+		        <li><a href="#">Edit Profile</a></li>
+		        <li><a href="#">Edit Contact Settings</a></li>
+                <li><a href="#">Edit Log In Settings</a></li>
+		        <!--<li><a href="#" data-reveal-id="modal-how" data-reveal>How To Use</a></li>-->
+		        <li><a href="#">Contact</a></li>                
+		      </ul>
+		    </aside>
+
+		    <aside class="right-off-canvas-menu">
+		        <ul class="off-canvas-list" id="right-canvas-content">
+			        <li><label>Sign In</label></li>
+				        <li>
+				        	<input type="text" placeholder="Username" id="canvas-content">
+				        </li>
+				        <li>
+				        	<input type="password" placeholder="Password" id="canvas-content">
+				        </li>
+				        <button id="canvas-login">Log-In</button>
+			             <li><label>Register New</label></li>
+			        	<li>
+				        	<input type="text" placeholder="First Name " id="canvas-content">
+				        </li>
+				        <li>
+				        	<input type="text" placeholder="Last Name " id="canvas-content">
+				        </li>
+				        <li>
+				        	<input type="text" placeholder="Email Name " id="canvas-content">
+				        </li>
+				        <li>
+				        	<input type="password" placeholder="Password" id="canvas-content">
+				        </li><li>
+				        <button id="canvas-login">Create Account</button>
+                         </li>
+		        </ul>
+		    </aside>
+
+		    <!-- 
+				THIS IS WHERE THE CONTENT IN THE MIDDLE GO IN :)
+		    -->
+		    
+		    <section class="main-section enlarge">
+	    				      	
+		      	<div class="leftbar">
+                <div class="row leftbar-name-box"><!--will contain company logo-->
+                    <div class="large-5 columns" style="padding-left: 0px; margin-right: 0px;">
+                        <img id="leftbar-dp" src="assets/emma_watson.png">
+                    </div>
+                    <div id="leftbar-name-box" class="row large-7 columns">
+                        <div id="leftbar-name"> 
+                            Watsons
+                        </div>
+                        <div id="leftbar-name-position"> 
+                            Medical Supplies
+                        </div>
+                    </div>
+                </div>
+                <div id="leftbar-skills" class="row">
+                   <div id="leftbar-list" class="large-6 columns">
+                       <ul>
+                           <li>IT</li>
+                           <li>Development</li>
+                           <li>Incubator</li>
+                       </ul>
+                   </div>
+                    <!----div id="leftbar-univ-name" class="large-12 columns">
+                        
+                    </div>
+                    <div id="leftbar-univ-course" class="large-12 columns">
+                        
+                    </div>
+                    <i id="leftbar-univ-gear" class="step fi-widget left-off-canvas-toggle" style="font-size: 25px;"></i-->  
+                </div>
+                <div id="leftbar-description" class="row">
+                    <div id="leftbar-description-inner" class="large-12 columns">
+                        Company Description: Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin. Venison tail chuck pork chop, andouille ball tip beef ribs flank boudin bacon. Salami andouille pork belly short ribs flank cow.
+                    </div>
+                    
+                </div>
+                      <br />
+                  <div id="leftbar-interests" class="row">
+                      <div id="leftbar-list" class="large-12 columns">
+                          <h6 id="leftbar-list-sections"><u>Interests:</u></h6>
+                          <ul>
+                              <li>Laurenz Tolentino</li>
+                          </ul>
+                          <h6 id="leftbar-list-sections"><u>Interested In You:</u></h6>
+                          <ul>
+                              <li>Charles Malcaba</li>
+                          </ul>
+                          <h6 id="leftbar-list-sections"><u>Pending Agreement:</u></h6>
+                          <ul>
+                              <li>Andrew Laron</li>
+                              <li>Kent Siangco</li>
+                          </ul>
+
+                      </div>
+                  </div>
+                      <div id="leftbar-startup-footer" class="row">
+                          <!----div class="large-12 columns">Medical Supplies</div-->
+                          <div class="large-12 columns">Dasmarinas, Makati</div>
+                          <div class="large-12 columns">updock@outlook.com</div>
+                      </div>
+                  <div id="leftbar-logo-bottom">
+                      UpDock
+                  </div>
+            </div>                
+                
+            <!-- END OF MAIN CONTENT SECTION DO NOT WRITE MIDDLE CONTENT AFTER THIS COMMENT-->
+		    </section>
+              
+            
+
+
+		  <a class="exit-off-canvas"></a>
+
+		  </div>
+		</div>				
+		
+        <!-- MODAL -->
+        <div id="modal-request" class="reveal-modal small" data-reveal>
+          <h2 class="rockwell">Help Request Form</h2>
+          <p class="lead">Please complete the following information</p>            
+            <textarea placeholder="Your Query/Issue" id="instant-location"></textarea>
+            <input type="text" placeholder="Where do you live?" id="instant-names">
+            <input type="text" placeholder="Your Field" id="instant-situation">
+            <input type="tel" placeholder="Your Email Address" id="instant-contact">         
+            <button>Request Help</button>            
+          <a class="close-reveal-modal">&#215;</a>
+        </div>
+    
+        
+
+
+		<script src="js/vendor/jquery.js"></script>
+	    <script src="js/foundation.min.js"></script>
+	    <script>
+	      $(document).foundation();
+	    </script>
+	</body>
+</html>

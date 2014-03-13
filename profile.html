@@ -1,0 +1,502 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>UpDock | Profile</title>		
+		<link rel="stylesheet" href="css/foundation-icons.css">
+        <link rel="stylesheet" href="css/laurenz.css">
+		<link rel="stylesheet" href="css/text-styles.css">	        
+		<link rel="stylesheet" type="text/css" href="css/interacts.css">
+		<link rel="stylesheet" href="css/foundation.css"/>
+        <link rel="stylesheet" href="css/foundation.min.css"/>
+		<link rel="stylesheet" href="css/laurenz.css">
+        <link rel="stylesheet" href="css/updock.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		
+		<script src="/js/vendor/modernizr.js"></script>
+	</head>
+
+	<body>			
+		<div class="off-canvas-wrap">
+		  <div class="inner-wrap">
+		  	<div class="fixed">
+                <nav id="topbar-pos" class="fixed tab-bar background-teal">
+                    <section id="left-ped" class="left-small background-teal" >
+                        <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+                    </section>
+
+                    <section class="middle tab-bar-section background-teal">
+                        <span class="rockwell font-20">
+                            <span id="minititle">
+                                <i class="step fi-comment margin-right-10" style="font-size: 25px;"></i>  
+                                <i class="step fi-like margin-right-10" style="font-size: 25px;"></i>  
+                                <i class="step fi-heart margin-right-10" style="font-size: 25px;"></i>  
+                                <i class="step fi-page-csv margin-right-10" style="font-size: 25px; "></i>
+                                | 
+                            </span>                            
+                            <a href="#" data-reveal-id="modal-request" data-reveal id="modalClick">
+                                <i class="step fi-magnifying-glass margin-left-10" style="font-size: 25px; "></i> 
+                            </a>
+                            
+                            
+                        </span>
+                        <span> <input id="searchbox" input="text" placeholder="Search Here "> </span>
+                    </section>
+
+                    <section id="right-ped" class="right-small right-mod">
+                        <a class="right-off-canvas-toggle" style="color: white;">
+                            
+                        </a>
+                    </section>
+                </nav>
+		  	</div>
+		    
+
+		    <aside class="left-off-canvas-menu">
+		      <ul class="off-canvas-list">
+		          <li>
+                      <label class="rockwell" style="color:#0aa;">
+                        Account Settings
+                      </label>
+                  </li>                  
+                <!--<li><a href="#" data-reveal-id="modal-request" data-reveal>Edit Profile</a></li>-->
+		        <li><a href="#">Edit Profile</a></li>
+		        <li><a href="#">Edit Contact Settings</a></li>
+                <li><a href="#">Edit Log In Settings</a></li>
+		        <!--<li><a href="#" data-reveal-id="modal-how" data-reveal>How To Use</a></li>-->
+		        <li><a href="#">Contact</a></li>                
+		      </ul>
+		    </aside>
+
+		    <aside class="right-off-canvas-menu">
+		        <ul class="off-canvas-list" id="right-canvas-content">
+			        <li><label>Sign In</label></li>
+				        <li>
+				        	<input type="text" placeholder="Username" id="canvas-content">
+				        </li>
+				        <li>
+				        	<input type="password" placeholder="Password" id="canvas-content">
+				        </li>
+				        <button id="canvas-login">Log-In</button>
+			             <li><label>Register New</label></li>
+			        	<li>
+				        	<input type="text" placeholder="First Name " id="canvas-content">
+				        </li>
+				        <li>
+				        	<input type="text" placeholder="Last Name " id="canvas-content">
+				        </li>
+				        <li>
+				        	<input type="text" placeholder="Email Name " id="canvas-content">
+				        </li>
+				        <li>
+				        	<input type="password" placeholder="Password" id="canvas-content">
+				        </li><li>
+				        <button id="canvas-login">Create Account</button>
+                         </li>
+		        </ul>
+		    </aside>
+
+<!-- 
+    THIS IS WHERE THE CONTENT IN THE MIDDLE GO IN :)
+-->
+		    
+		    <section class="main-section enlarge">
+                
+<!-- LEFTBAR CONTENT START-->
+		      	<div class="leftbar">
+                    <div class="row leftbar-name-box">
+                        <div class="large-5 columns" style="padding-left: 0px; margin-right: 0px;">
+                            <img id="leftbar-dp" src="assets/emma_watson.png">
+                        </div>
+                        <div id="leftbar-name-box" class="row large-7 columns">
+                            <div id="leftbar-name"> 
+                                Emma Watson
+                            </div>
+                            <div id="leftbar-name-position"> 
+                                Software Muse
+                            </div>
+                        </div>
+                    </div>
+                    <div id="line"></div>
+                    <div id="leftbar-univ" class="row">
+                        <div id="leftbar-univ-name" class="large-12 columns">
+                            De La Salle University
+                        </div>
+                        <div id="leftbar-univ-course" class="large-12 columns">
+                            BS Computer Science
+                        </div>
+                        <i id="leftbar-univ-gear" class="step fi-widget left-off-canvas-toggle" style="font-size: 25px;"></i>  
+                    </div>
+                      <div id="leftbar-skills" class="row">
+                          <div id="leftbar-list" class="large-12 columns">
+                              <ul id="leftbar-list-content">
+                                  <li >Web Development</li>
+                                  <li>Acting</li>
+                                  <li>Inspiration</li>
+                              </ul>
+                          </div>
+                      </div>
+                      <br />
+                      <div id="leftbar-interests" class="row">
+                          <div id="leftbar-list" class="large-12 columns">
+                              <h6 id="leftbar-list-sections"><u>Interests:</u></h6>
+                                  <ul id="leftbar-list-content-interest">
+                                      <li>Hacko Labs Inc.</li>
+                                  </ul>
+                              <h6 id="leftbar-list-sections"><u>Interested In You:</u></h6>
+                                  <ul id="leftbar-list-content-interests">
+                                      <li>Aseus Software Ltd.</li>
+                                  </ul>
+                              <h6 id="leftbar-list-sections"><u>Pending Agreement:</u></h6>
+                                  <ul id="leftbar-list-content-pending">
+                                      <li>Samsang Ltd.</li>
+                                  </ul>
+
+                          </div>
+                      </div>
+                    
+                    <div id="leftbar-logo-bottom">
+                        <div id="line"></div>
+                        UpDock
+                    </div>
+                
+                </div>                
+<!-- LEFT BAR CONTENT END ABOVE-->
+
+<!-- MID CONTENT START BELOW-->
+                <div id="midbar" class="row">
+                <!-- MID CONTENT START BELOW-->
+                    <div id="scrubber">
+                        <div id="scrubber-title">
+                            <span>
+                                Startup Scrubber
+                            </span>                            
+                            <form id="scrubber-search-form" name="scrubber-search-form">
+                                <input id="scrubber-search-box" type="text" name="scrubber-search-box" placeholder="Search company name">
+                            </form>                                                                                    
+                        </div>
+                        <div id="line"></div>
+                        <div id="scrubber-filters" class="row">
+                            <div class="large-2 columns" style="padding:7px;">
+                                <div><input id="filter-frontend" type="checkbox"> Front End </div>
+                                <div><input id="filter-backend" type="checkbox"> Back End </div>
+                                <div><input id="filter-fullstack" type="checkbox"> Full Stack </div>
+                                <div><input id="filter-softeng" type="checkbox"> QA Testing </div>                                
+                            </div>
+                            <div class="large-2 columns" style="padding:7px;">
+                                <div><input id="filter-frontend" type="checkbox"> Web Development </div>
+                                <div><input id="filter-backend" type="checkbox"> Mobile Development </div>
+                                <div><input id="filter-fullstack" type="checkbox"> Desktop Development </div>
+                                <div><input id="filter-softeng" type="checkbox"> Server/DBADMIN </div>                                
+                            </div>
+                            <div class="large-2 columns">       
+                                Slider
+                                <div class="range-slider round" data-slider>
+                                    <span class="range-slider-handle"></span>
+                                    <span class="range-slider-active-segment"></span>
+                                    <input type="hidden">
+                                </div>
+                            </div>
+                            <div class="large-2 columns" style="padding:7px;">                                
+                                <i class="step fi-star" style="font-size: 25px;"></i>  
+                                <i class="step fi-star" style="font-size: 25px;"></i>  
+                                <i class="step fi-star" style="font-size: 25px;"></i>  
+                                <i class="step fi-star" style="font-size: 25px;"></i>  
+                                <i class="step fi-star" style="font-size: 25px;"></i>  
+                            </div>
+                            <div class="large-4 columns" style="padding:7px;">
+                                Location Filter
+                                <input id="scrubber-filter-region" type="text" placeholder="Region">
+                                <input id="scrubber-filter-city" type="text" placeholder="City">
+                            </div>
+                        </div>
+                        <div id="scrubber-divider" class="row">
+                            <div id="scrubber-divider-fulltime" class="large-6 columns">
+                                Full Time
+                            </div>
+                            <div id="scrubber-divider-parttime" class="large-6 columns">
+                                Part Time
+                            </div>
+                        </div>
+                        
+                        <div id="fulltime-column" class="large-6 left">
+                            <!-- Full Time Column Starts Here-->                            
+                            <div id="fulltime-content">
+                                <a data-reveal-id="modal-congrats" data-reveal style="color:black;">
+                                <div id="fulltime-content-top" class="row">
+                                    <div class="large-3 left">
+                                        <img id="fulltime-content-logo" src="img/creativenative-logo.png">
+                                        <div>
+                                            <i class="step fi-star" style="font-size: 17px;"></i>  
+                                            <i class="step fi-star" style="font-size: 17px;"></i>  
+                                            <i class="step fi-star" style="font-size: 17px;"></i>  
+                                            <i class="step fi-star" style="font-size: 17px;"></i>  
+                                            <i class="step fi-star" style="font-size: 17px;"></i>  
+                                        </div>
+                                    </div>
+                                    <div class="large-9 right" style="padding-left: 10px;">
+                                        <div id="fulltime-content-name">
+                                            
+                                                Creative Native
+                                        </div>
+                                        <div id="fulltime-content-lookingfor">
+                                            Looking For<br>
+                                            Software Engineers, Systems Admin, Web Designers, Web Developers. 
+                                        </div>
+                                    </div>                                                                        
+                                </div>
+                                <div id="line-thin"></div>
+                                <div id="fulltime-content-bottom">
+                                    <div id="fulltime-content-desc"  class="large-8 left">
+                                        Creative Native is a new Software Development Studio based in Taft, Manila. Founded by Laurenz Tolentino. 
+                                        Creative Native provides Agile™ Software Solutions and Web Applications for local startups as well as major companies                                        
+                                    </div>
+                                    <div class="large-4 right">
+                                        <ul id="fulltime-content-info" >
+                                            <li class="nospace">P40000 - P70000</li>
+                                            <li class="nospace">Taft, Man</li>
+                                            <li class="nospace">IT Startup</li>
+                                            <li class="nospace">All Around IT Development Company</li>
+                                            <li class="nospace">Data Center</li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>  
+                            
+                            <div id="fulltime-content">
+                                <a data-reveal-id="modal-congrats" data-reveal style="color:black;">
+                                <div id="fulltime-content-top" class="row">
+                                    <div class="large-3 left">
+                                        <img id="fulltime-content-logo" src="img/sparo-logo.png">
+                                        <div>
+                                            <i class="step fi-star" style="font-size: 17px;"></i>  
+                                            <i class="step fi-star" style="font-size: 17px;"></i>  
+                                            <i class="step fi-star" style="font-size: 17px;"></i>  
+                                            <i class="step fi-star" style="font-size: 17px;"></i>  
+                                            <i class="step fi-star" style="font-size: 17px;"></i>  
+                                        </div>
+                                    </div>
+                                    <div class="large-9 right" style="padding-left: 10px;">
+                                        <div id="fulltime-content-name">
+                                            Sparo Services
+                                        </div>
+                                        Looking For<br>
+                                        <div id="fulltime-content-lookingfor">                                            
+                                            Business Administrators, Financial Consultants, Web Developers
+                                        </div>
+                                    </div>                                                                        
+                                </div>
+                                <div id="line-thin"></div>
+                                <div id="fulltime-content-bottom">
+                                    <div id="fulltime-content-desc"  class="large-8 left">
+                                        Sparo Services is a financial consulting firm. The newly built company deals with fellow startups or 
+                                        newly built franchises on how they can improve their service and help them earn more money. Based in Makati, 
+                                        the hub of business in the Philippines, they work with small to large companies.
+                                        
+                                    </div>
+                                    <div class="large-4 right">
+                                        <ul id="fulltime-content-info" >
+                                            <li class="nospace">P20000 - P50000</li>
+                                            <li class="nospace">San Lorenzo, Makati</li>
+                                            <li class="nospace">Finance Startup</li>
+                                            <li class="nospace">Business Consultancy</li>
+                                            <li class="nospace">Financial Advising Service</li>                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                </a>
+                            </div> 
+                            <div id="fulltime-content">
+                                <a data-reveal-id="modal-congrats" data-reveal style="color:black;">
+                                <div id="fulltime-content-top" class="row">
+                                    <div class="large-3 left">
+                                        <img id="fulltime-content-logo" src="img/hacko-logo.png">
+                                        <div>
+                                            <i class="step fi-star" style="font-size: 17px;"></i>  
+                                            <i class="step fi-star" style="font-size: 17px;"></i>  
+                                            <i class="step fi-star" style="font-size: 17px;"></i>  
+                                            <i class="step fi-star" style="font-size: 17px;"></i>  
+                                            <i class="step fi-star" style="font-size: 17px;"></i>  
+                                        </div>
+                                    </div>
+                                    <div class="large-9 right" style="padding-left: 10px;">
+                                        <div id="fulltime-content-name">
+                                            
+                                                Hacko Labs Inc.
+                                        </div>
+                                        <div id="fulltime-content-lookingfor">
+                                            Looking For<br>
+                                            Software Engineers, Systems Admin, Web Designers, Web Developers. 
+                                        </div>
+                                    </div>                                                                        
+                                </div>
+                                <div id="line-thin"></div>
+                                <div id="fulltime-content-bottom">
+                                    <div id="fulltime-content-desc"  class="large-8 left">
+                                        Hacko labs  is a startup incubator. It's so hot here. Hot like oven.                                        
+                                    </div>
+                                    <div class="large-4 right">
+                                        <ul id="fulltime-content-info" >
+                                            <li class="nospace">P40000 - P70000</li>
+                                            <li class="nospace">Taft, Man</li>
+                                            <li class="nospace">IT Startup</li>
+                                            <li class="nospace">All Around IT Development Company</li>
+                                            <li class="nospace">Data Center</li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <!-- Full Time Column Ends here -->
+                        </div>
+                        
+                        <div id="parttime-column" class="large-6 right">
+                    <!-- Part Time Column Ends here -->
+                            <div id="parttime-content">
+                                <a data-reveal-id="modal-congrats" data-reveal style="color:black;">
+                                <div id="parttime-content-top" class="row">                                    
+                                    <div class="large-12 left" style="padding-left: 10px;">
+                                        <div id="parttime-content-name">
+                                            Samsang Limited.
+                                        </div>
+                                        
+                                    </div>                                                                        
+                                </div>
+                                <div id="line-thin"></div>
+                                <div id="fulltime-content-bottom">
+                                    <div id="parttime-content-desc" class="large-8 left">
+                                            Looking For<br>
+                                            Software Engineers, Systems Admin, Web Designers. Also looking for MISSING APOL IPHUNE 7 prototype.
+                                        </div>
+                                    <div class="large-4 right">
+                                        <ul id="fulltime-content-info" >
+                                            <li class="nospace">P25,000 monthly</li>
+                                            <li class="nospace">Tokyo, Batangas</li>
+                                            <li class="nospace">7 Months Duration</li>                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <div id="parttime-content">
+                                <a data-reveal-id="modal-congrats" data-reveal style="color:black;">
+                                <div id="parttime-content-top" class="row">                                    
+                                    <div class="large-12 left" style="padding-left: 10px;">
+                                        <div id="parttime-content-name">
+                                            Aseus Softwuhr
+                                        </div>
+                                        
+                                    </div>                                                                        
+                                </div>
+                                <div id="line-thin"></div>
+                                <div id="fulltime-content-bottom">
+                                    <div id="parttime-content-desc" class="large-8 left">
+                                            Looking For<br>
+                                            A Programmable Software Developer. Needs to be above average but below sea level.
+                                        </div>
+                                    <div class="large-4 right">
+                                        <ul id="fulltime-content-info" >
+                                            <li class="nospace">P100,000 monthly</li>
+                                            <li class="nospace">Beijing, Pasay</li>
+                                            <li class="nospace">14 Months Duration</li>                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <div id="parttime-content">
+                                <a data-reveal-id="modal-congrats" data-reveal style="color:black;">
+                                <div id="parttime-content-top" class="row">                                    
+                                    <div class="large-12 left" style="padding-left: 10px;">
+                                        <div id="parttime-content-name">
+                                            Yellow & Bronze
+                                        </div>                                        
+                                    </div>                                                                        
+                                </div>
+                                <div id="line-thin"></div>
+                                <div id="fulltime-content-bottom">
+                                    <div id="parttime-content-desc" class="large-8 left">
+                                            Looking For<br>
+                                            Java Rice. Does not accept plain dinorado rice.  
+                                        </div>
+                                    <div class="large-4 right">
+                                        <ul id="fulltime-content-info" >
+                                            <li class="nospace">P25,000 monthly</li>
+                                            <li class="nospace">Orange, Muntinlupa</li>
+                                            <li class="nospace">7 Months Duration</li>                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <div id="parttime-content">
+                                <a data-reveal-id="modal-congrats" data-reveal style="color:black;">
+                                <div id="parttime-content-top" class="row">                                    
+                                    <div class="large-12 left" style="padding-left: 10px;">
+                                        <div id="parttime-content-name">
+                                            MyPhune
+                                        </div>
+                                        
+                                    </div>                                                                        
+                                </div>
+                                <div id="line-thin"></div>
+                                <div id="fulltime-content-bottom">
+                                    <div id="parttime-content-desc" class="large-8 left">
+                                            Looking For<br>
+                                            Software Engineers, Systems Admin, Web Designers, Web Developers. 
+                                        </div>
+                                    <div class="large-4 right">
+                                        <ul id="fulltime-content-info" >
+                                            <li class="nospace">P25,000 monthly</li>
+                                            <li class="nospace">Tokyo, Batangas</li>
+                                            <li class="nospace">7 Months Duration</li>                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                    <!-- Part Time Column Ends here -->
+                        </div>
+                    </div>                    
+                <!-- MID CONTENT END ABOVE-->
+                </div>
+<!-- MID CONTENT END ABOVE-->
+                
+                
+<!-- END OF MAIN CONTENT SECTION DO NOT WRITE MIDDLE CONTENT AFTER THIS COMMENT-->
+		    </section>
+              
+            
+
+
+		  <a class="exit-off-canvas"></a>
+            
+            </div>
+        </div>				
+		
+        <!-- MODAL -->
+        <div id="modal-request" class="reveal-modal small" data-reveal>
+          <h2 class="rockwell">Me Not Working. Go find anuthur button tu prezz.</h2>                      
+          <a class="close-reveal-modal">&#215;</a>
+        </div>
+    
+        <div id="modal-congrats" class="reveal-modal small" data-reveal>
+          <h2 class="rockwell">Yay you pressed me!</h2>                      
+            <p>Sorry, I'm absent today. Me has ojt interpewpewpew<br>
+                Goodluck Guys!!- Laurenz</p>
+          <a class="close-reveal-modal">&#215;</a>
+        </div>
+        
+		<script src="js/vendor/jquery.js"></script>
+	    <script src="js/foundation.min.js"></script>        
+        <script src="js/foundation/foundation.slider.js"></script>
+        
+	    <script>
+            $(document).foundation();
+	    </script>        
+	</body>
+</html>d6d6d6d6d6d6d6d6d6

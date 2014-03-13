@@ -1,0 +1,27 @@
+
+.background-teal {
+    background: teal;
+    background-color: teal;
+}
+
+.leftbar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: #1d1d1d;
+    height: 100%;
+    width: 230px;
+}
+
+#searchbox {
+    margin-left: 20px;
+    padding-left: 30px;
+    width: 700px;
+    height: 30px;
+    border: 0px;
+    border-radius: 5px;
+    background: #005d5d;
+    color: white;
+    font-family: Rockwell;
+}
+
